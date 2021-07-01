@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" id="css" href="style.css">
+    <title>Quentin A.</title>
+</head>
+<body>
+    <div id="flow">
+        <div id="menu">
+            <h1 class="initial">QA</h1>
+            <div class="menu">
+                <a href="index.html">Accueil</a>
+                <a href="presentation.html" class="here">Présentation</a>
+                <a href="creation.html" class="toearly">Création</a>
+
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="darkmodemenu" onclick="activemenu(), setTimeout(disablemenu,3500)">
+                <a href="#" id="darka"><img src="asset/img/sun.png" alt=""></a>        
+            </div>
+            <div id="return">
+                <a href="http://www.quentin-a.com"><h8 class="return">QA</h8></a>
+            </div>
+        </div>
+        <div class="darkderoul" id="darkderoul">
+            <label for="darkmode">Passer en light mode:</label>
+            <input type="checkbox" name="darkmode" id="darkmode" onclick="lightmode()" indeterminate>
+        </div>
+
+        <div id="apropos">
+            <h1>A propos de moi</h1>
+                <div class="apropos">
+                    <p>
+                        Né à Toulon (83) le 30/10/1995, je suis rapidement allé en Rhônes-Alpes.
+                        Habitant dans un premier temps dans le Rhône (69) puis plus tard dans la Loire (42).
+                        Après le collège, j'ai éffectué une année de CAP Service à la personne au Lycée Agricole de Sury-le-comtal.
+                        Cela ne me convenant pas, je suis partis en CAP Cuisine à Saint-Genest-Lerpt où j'ai obtenu mon diplôme 2 ans plus tard.
+                        J'ai commencé la vie active dans des restaurants avant de me diriger vers l'intérim,
+                        d'abord en cuisine puis ensuite tout type de métier voulant m'éloigner de la cuisine.
+                        C'est en avril 2021 que je rejoins Digital France School pour une formation de Dev Web et Web mobile.
+                    </p>
+                    <p>
+                        Grâce à la multitude de secteurs découverts et les différents métiers effectués, j'ai pu acquérir diverses
+                        compétences que je mettrais à profit pour les tâches qui me seront confiées. Habitué au stress et au travail en équipe
+                        grâce à la cuisine ou encore l'organisation et le contact client grâce à mon année passer au sein d'UPS.
+                        Tant d'expérience que je peux mettre à profit dans le développement.
+                    </p>
+                </div>
+                <div class="download">
+                    <h5>N'hésitez pas télécharger mon C.V en PDF:</h5>
+                    <a href="asset/doc/CV Quentin ALBERT.pdf">
+                        <img src="asset/img/pdf.png" alt="">
+                    </a>
+                    <a href="asset/doc/CV Quentin ALBERT.pdf" download="CV Quentin ALBERT.pdf"><button class="btn">Télécharger</button></a>
+                </div>
+        </div>
+    </div>
+    <script src="js.js" type="text/Javascript"></script>
+</body>
+</html>

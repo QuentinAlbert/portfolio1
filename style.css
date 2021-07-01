@@ -1,0 +1,912 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    background-color: rgb(15, 15, 15);
+}
+
+#menu{
+    background-color: rgb(15, 15, 15);
+    display: inline-flex;
+    align-items: center;
+    width: 100vw;
+    border-bottom: #CCB062 2px solid;
+    position: relative ;
+    z-index: 1;
+}
+
+#return{
+    font-family: 'Righteous', cursive;
+}
+#return a{
+    text-decoration: none;
+}
+.return{
+    color: #d2d2d2;
+    text-shadow: 0.15vw 0.15vw #eeee08,
+                0.25vw 0.25vw #f8b356,
+                0.35vw 0.35vw #e24242;
+    font-size: 2vw;
+    position: fixed;
+    right: 0.5vw;
+    top: 0.1vw;
+}
+
+
+
+.darkmodemenu a{
+    position: absolute;
+    right: 1vw;
+    top: 12px;
+    display: none;
+}
+
+.darkderoul{
+    height: 2vw;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #CCB062 2px solid;
+    color: white;
+    position: absolute;
+    right: 1vw;
+    top: 0vw;
+    display: none;
+}
+
+.toearly{
+    display: none;
+}
+
+.menu .here{
+    color: white;
+}
+
+.here:hover{
+    color: #CCB062;
+}
+
+.initial{
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    padding: 13px;
+    margin: 0;
+    border-right: 2px solid #CCB062;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #CCB062;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+a:hover{
+    color: white;
+}
+
+
+#menu img{
+    width: 2vw;
+}
+
+#presentation{
+   width: 100vw;
+   height: 25vw;
+   display: flex;
+   color: white;
+   overflow: hidden;
+}
+
+.test{
+    color: rgb(65, 65, 65);
+    font-family: 'Julius Sans One', sans-serif;
+    position: absolute;
+    transform: rotate(30deg);
+    font-size: 25vw;
+    left: 55vw;
+    top: -10vw;
+    overflow: hidden;
+}
+
+.presentation{
+    display: flex;
+    padding: 3vw;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.presentation h1{
+    position: relative;
+    margin: 0;
+    font-size: 3.5vw;
+    animation-duration: 1s;
+    animation-name: slide-left;
+    overflow: hidden;
+    left: -70vw;
+    animation-fill-mode: forwards;
+}
+
+
+.presentation h2{
+    position: relative;
+    margin: 0;
+    font-size: 3vw;
+    animation-duration: 1s;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation-name: slide-right;
+    right: -70vw;
+    animation-delay: 0.5s;
+}
+
+h3{
+    position: relative;
+    margin: 0;
+    font-size: 2vw;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.title1{
+    animation-name: slide-left;
+    left: -72vw;
+    animation-delay: 1s;
+}
+
+.title{
+    animation-name: slide-right;
+    right: -70vw;
+    animation-delay: 1.5s;
+}
+
+#experience{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#experience h2{
+    color: white;
+    text-decoration: underline;
+    margin: 0;
+    font-size: 2vw;
+    position: relative;
+    top: -10vw;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+    animation-name: slide-top;
+}
+
+.experience{
+    display: inline-flex;
+    overflow: hidden;
+    height: 40vw;
+    z-index: 1;
+}
+
+.experience h5{
+    color: #CCB062;
+    font-size: 1.5vw;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.experience p{
+    color: white;
+    margin: 0;
+    font-size: 1.25vw;
+
+}
+
+.exp-left{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.exp-left h5{
+    position: relative;
+    left: -40vw;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: slide-left;
+}
+
+.exp-left p{
+    position: relative;
+    right: -40vw;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: slide-right;
+}
+
+.exp-right{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.exp-right h5{
+    position: relative;
+    right: -40vw;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: slide-right;
+}
+
+.exp-right p{
+    position: relative;
+    left: -40vw;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: slide-left;
+}
+
+
+#competence{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.connaissance p{
+    padding: 2px;
+}
+
+.connaissance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 50vw;
+}
+
+.conn{
+    position: relative;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-name: slide-btm;
+    bottom: -9vw;
+    animation-fill-mode: forwards;
+}
+
+.conn-p{
+    display: inline-flex;
+}
+
+ .conn-p{
+    color: white;
+    font-size: 1.5vw;
+}
+
+.conn-p1{
+    position: relative;
+    left: -20vw;
+    transform: rotateZ(-360deg);
+    animation-duration: 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    animation-name: rolling-left;
+}
+
+.conn-p2{
+    position: relative;
+    left: -25vw;
+    transform: rotateZ(-360deg);
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-name: rolling-left;
+}
+
+.conn-p3{
+    position: relative;
+    right: -30vw;
+    transform: rotateZ(360deg);
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-name: rolling-right;
+}
+
+.conn-p4{
+    position: relative;
+    right: -25vw;
+    transform: rotateZ(360deg);
+    animation-duration: 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    animation-name: rolling-right;
+}
+
+.tmiddle{
+    position: relative;
+    bottom: -4vw;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slide-btm;
+}
+
+.tside{
+    position: relative;
+    bottom: -4vw;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slide-btm;
+}
+
+.comp-p p{
+    padding: 2px;
+}
+
+.competences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 50vw;
+    overflow: hidden;
+}
+
+.comp-title{
+    display: inline-flex;
+}
+
+.comp-title p{
+    font-size: 2vw;
+    color: #CCB062;
+    margin: 0;
+}
+
+.comp-t1{
+    position: relative;
+    left: -25.5vw;
+    animation-name: slide-left;
+    animation-delay: 4.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.comp-t2{
+    position: relative;
+    right: -25vw;
+    animation-name: slide-right;
+    animation-delay: 4.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.comp-p{
+    display: inline-flex;
+}
+
+.comp1{
+    position: relative;
+    bottom: -4vw;
+    animation-name: slide-btm;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.t1{
+    position: relative;
+    bottom: -4vw;
+    animation-name: slide-btm;
+    animation-delay: 5.25s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.comp2{
+    position: relative;
+    bottom: -4vw;
+    animation-name: slide-btm;
+    animation-delay: 5.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.t2{
+    position: relative;
+    bottom: -4vw;
+    animation-name: slide-btm;
+    animation-delay: 5.75s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.comp3{
+    position: relative;
+    bottom: -4vw;
+    animation-name: slide-btm;
+    animation-delay: 6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.t3{
+    position: relative;
+    bottom: -4vw;
+    animation-name: slide-btm;
+    animation-delay: 6.25s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.comp4{
+    position: relative;
+    bottom: -4vw;
+    animation-name: slide-btm;
+    animation-delay: 6.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+h4{
+    color: #CCB062;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.comp-p p{
+    color: white;
+    font-size: 1.5vw;
+}
+
+.formation{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 50vw;
+}
+
+.formation p{
+    color: white;
+    font-size: 1.5vw;
+}
+
+.formation h4{
+    position: relative;
+    top: -4vw;
+    animation-delay: 1.25s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: slide-top;
+}
+
+@keyframes slide-left{
+    to{
+        left: 0;
+    }
+}
+
+@keyframes slide-right{
+    to{
+        right: 0;
+    }
+}
+
+@keyframes slide-btm{
+    to{
+        bottom: 0;
+    }
+}
+
+@keyframes slide-top{
+    to{
+        top: 0;
+    }
+}
+
+@keyframes rolling-left{
+    to{
+        left: 0;
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes rolling-right{
+    to{
+        right: 0;
+        transform: rotate(0deg);
+    }
+}
+
+/* ---------- Creation.html --------- */
+
+.site-f{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-f h2{
+    font-size: 2vw;
+    color: #CCB062;
+}
+
+.sf1{
+    display: inline-flex;
+}
+
+.sf1 img{
+    width: 30vw;
+    border-radius: 45px;
+    border: #CCB062 2px solid;
+}
+
+/* ---------- contact.html ---------*/
+#contact{
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #CCB062 3px solid;
+    border-radius: 25px;
+    width: 45vw;
+}
+
+form h1{
+    color: #CCB062;
+    text-decoration: underline;
+}
+
+#contact input{
+    width: 20vw;
+    height: 1.5vw;
+    margin: 0.5vw;
+}
+
+.ipt{
+    display: flex;
+    height: 2vw;
+    width: 25vw;
+    background-color:white;
+    margin: 0.5vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.ipt-bdr{
+    border: none;
+}
+
+#contact input[type=file]::-webkit-file-upload-button{
+    width: 10vw;
+    height: 1.5vw;
+    border-radius: 25px;
+    border: none;
+}
+
+#contact input[type=file]::-webkit-file-upload-button:hover{
+    background-color: #CCB062;
+}
+
+#contact input[type=file]{
+    color: white;
+    display: none;
+}
+
+#contact .ipt-bdr:focus{
+    outline: none;
+    border: 2px solid #CCB062;
+}
+
+#contact textarea{
+    min-width: 20vw;
+    max-width: 40vw;
+    margin: 0.5vw;
+    border-radius: 10px;
+}
+
+#contact textarea:focus{
+    outline: none;
+    border: 2px solid #CCB062;
+}
+
+.btn{
+    width: 10vw;
+    height: 2vw;
+    margin: 1vw;
+    background-color: #CCB062;
+    border-radius: 25px;
+    border: none;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.btn:active{
+    border: 1px white solid;
+    box-shadow: white 0px 4px 10px;
+}
+
+/* --------- presentation.html ---------- */
+#apropos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#apropos h1{
+    color: #CCB062;
+}
+
+.apropos{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.apropos p{
+    color: white;
+    font-size: 1.2vw;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.download h5{
+    font-size: 1vw;
+    color: #CCB062;
+}
+
+.download a img{
+    width: 7vw;
+}
+
+/* ------------- Media ---------------- */
+
+@media (max-width: 768px) {
+    .apropos p{
+        color: white;
+        font-size: 1.7vw;
+    }
+    .download h5{
+        font-size: 1.6vw;
+        color: #CCB062;
+    }
+    .download a img{
+        width: 9vw;
+    }
+
+    .btn{
+        width: 12vw;
+        height: 3vw;
+        margin: 1vw;
+        background-color: #CCB062;
+        border-radius: 25px;
+        border: none;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: #CCB062;
+        font-size: 2vw;
+        padding: 1vw;
+    }
+
+    .ipt{
+        display: flex;
+        height: 3vw;
+        width: 37vw;
+        background-color:white;
+        margin: 0.7vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
+
+    #contact input{
+        width: 30vw;
+        height: 2vw;
+        margin: 0.5vw;
+    }
+}
+
+@media (max-width: 425px){
+    .menu a{
+        font-size: 4.5vw;
+    }
+
+    .presentation h1{
+        font-size: 5vw;
+    }
+    
+    .presentation h2{
+    
+        font-size: 4vw;
+        right: -75vw;
+    }
+    
+    h3{
+        font-size: 3vw;
+    }
+
+    .title1{
+        left: -82vw;
+    }
+    
+    .title{
+        right: -78vw;
+    }
+
+    .conn{
+        bottom: -15vw;
+        font-size: 3vw;
+    }
+
+    .conn-p{
+        font-size: 2.5vw;
+    }
+
+    .tmiddle{
+        bottom: -7vw;
+    }
+    
+    .tside{
+        bottom: -7vw;
+    }
+
+    .comp-title p{
+        font-size: 3vw;
+    }
+
+    .comp-p p{
+        font-size: 2.5vw;
+    }
+
+    .competences{
+        width: 87vw;
+    }
+
+    .comp-t1{
+        left: -44vw;
+    }
+    
+    .comp-t2{
+        right: -44vw;
+    }
+
+    .pos{
+        bottom: -7vw;
+    }
+
+/* -------- experience ------- */
+
+#experience h2{
+    font-size: 3.5vw;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    height: 185vw;
+}
+
+.experience h5{
+    font-size: 3vw;
+}
+
+.experience p{
+    font-size: 2.5vw;
+
+}
+
+.exp-left{
+    width: 60vw;
+}
+
+.exp-left h5{
+    left: -60vw;
+}
+
+.exp-left p{
+    right: -60vw;
+}
+
+.exp-right{
+    width: 60vw;
+}
+
+.exp-right h5{
+    right: -60vw;
+}
+
+.exp-right p{
+    position: relative;
+    left: -55vw;
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-name: slide-left;
+}
+
+.formation{
+    width: 65vw;
+}
+
+.formation p{
+    font-size: 2.5vw;
+}
+
+h4{
+    font-size: 3vw;
+}
+
+/* --------- Contact ------ */
+
+    form{
+        width: 75vw;
+    }
+
+    #contact input{
+        width: 30vw;
+        height: 3vw;
+        margin: 0.5vw;
+    }
+    
+    .ipt{
+        height: 4vw;
+        width: 40vw;
+    }
+
+    .btn{
+        width: 20vw;
+        height: 5vw;
+        margin: 2vw;
+    }
+
+    /* --------- Presentation ------- */
+    
+    .apropos{
+        width: 80vw;
+    }
+    
+    .apropos p{
+        font-size: 3.5vw;
+    }
+
+    .download h5{
+        font-size: 3vw;
+        color: #CCB062;
+    }
+    
+    .download a img{
+        width: 15vw;
+    }
+
+    .download .btn{
+        width: 30vw;
+        height: 7vw;
+        margin: 2vw;
+    }
+
+}
+
